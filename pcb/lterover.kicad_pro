@@ -138,7 +138,7 @@
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1016,
         "min_via_annular_width": 0.1016,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -259,7 +259,28 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1612900|520700|9de7740a-9958-4b07-8acc-599717073730|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "no_connect_connected|1612900|558800|a37018e4-90c2-446c-9a9c-7f6b220acf63|9601029d-8865-41a5-9b21-8a0bc404bdda|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a||",
+        ""
+      ],
+      [
+        "pin_to_pin|1841500|698500|70fa523f-22e3-4453-b509-e6a821f5b50c|52009b6e-dad0-445f-a6fb-519e7af2b0e5|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a",
+        ""
+      ],
+      [
+        "pin_to_pin|1841500|774700|eb618bad-86e3-47ba-8c2c-90a7e0633d9d|d3301b22-e2bd-4de8-8dff-7d9240f3e9ad|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1714500|495300|3bd91b53-756e-4a09-8c96-98d74f4b2299|00000000-0000-0000-0000-000000000000|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|/99aea5fa-3fd7-4bb6-a3ad-c5129f1b5a1a|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -627,12 +648,36 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -664,6 +709,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
