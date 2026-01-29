@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 2.5,
+          "width": 2.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -59,26 +59,6 @@
         }
       ],
       "drc_exclusions": [
-        [
-          "lib_footprint_issues|113030000|95123000|fb4e39ab-2bb7-48ea-b213-5229655b4c47|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_issues|121573000|112502000|e12649dd-a15f-4074-83e3-edcf16e8491e|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|120207500|97300000|74b273a2-e8f8-40a5-8b5b-a0584853e32e|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|129880500|109371500|d60b5d66-d7b9-4f39-a1e6-3d9a7b8ffbd8|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|131154000|101077500|709aea50-11d6-4e82-9603-df2d63a9af64|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
         [
           "silk_overlap|132292164|97940000|3fc41503-a873-45b7-a25d-4d62a0cf79ce|377ea009-9584-41a8-86d0-576601fc54e6",
           ""
@@ -129,18 +109,6 @@
         ],
         [
           "silk_overlap|136043641|99694000|3de279e8-5d71-4fc1-bcb7-b3c4fe9cdaa5|705ebb4e-7c4d-4c49-9e99-4c336caad6db",
-          ""
-        ],
-        [
-          "starved_thermal|120280000|115697000|8f681331-3f44-4dc4-84c0-391511177cfa|82a3a168-1e32-4642-8712-f1cf94b8c317|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|124940000|115443000|8f681331-3f44-4dc4-84c0-391511177cfa|f45f7510-a14a-4318-b491-38ebde941e02|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|132880000|98300000|8f681331-3f44-4dc4-84c0-391511177cfa|ffc1c5d8-5622-425f-be01-320fb9a9db68|F.Cu",
           ""
         ]
       ],
